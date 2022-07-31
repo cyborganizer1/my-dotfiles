@@ -9,9 +9,9 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' # add to
 
 config config --local status.showUntrackedFiles no
 
-git remote add origin git@gitlab.com:linux-files1/dotfiles.git # set remote to existing repo from gitlab
+git remote add origin git@gitlab.com:cyborganizer/linuxfiles/dotfiles.git # set remote to existing repo from gitlab
 
-config push git@gitlab.com:linux-files1/dotfiles.git # push to existing repo from gitlab
+config push git@gitlab.com:cyborganizer/linuxfiles/dotfiles.git # push to existing repo from gitlab
 
 config push --set-upstream origin main # set upstream
 
