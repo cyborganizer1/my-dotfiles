@@ -5,7 +5,7 @@
 
 git init --bare $HOME/dotfiles # init bare repo in dotfiles path
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' # set alias to config 
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' # add to zsh_aliases
 
 config config --local status.showUntrackedFiles no
 
