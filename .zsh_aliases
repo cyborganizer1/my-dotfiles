@@ -1,0 +1,81 @@
+# alias examples
+# https://www.reddit.com/r/linux/comments/c85me2/useful_aliases_that_i_have_created/
+
+# git dotfile
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+# terraform aliases
+alias tf='terraform'
+alias tfv='terraform validate'
+alias tfi='terraform init'
+alias tfp='terraform plan' 
+alias tfm='terraform fmt -recursive'
+alias tfa='terraform apply'
+alias tfaaa='terraform apply -auto-approve'
+alias tfdaa='terraform destroy -auto-approve'
+
+# history alias
+alias h='history | tail -20'
+
+# neovim alias
+alias vim='nvim'
+
+# bat alias
+alias batcat='cat'
+
+# dnf update and upgrade
+alias update='sudo dnf update && sudo dnf upgrade'
+
+alias cls="clear"
+
+alias ls='ls -F'
+alias ll='ls -lh'
+alias lll='ls -l'
+alias la='ls -A'
+alias lla='ls -Alh'
+
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias ..=cd..
+alias ...=cd...
+alias ....=cd....
+alias .....=cd.....
+
+# power commands
+alias shutdown='sudo shutdown -h now'
+alias reboot='sudo shutdown -r now'
+alias restart='sudo shutdown -r now'
+
+# my public ip
+alias myip='curl http://ipecho.net/plain; echo'
+
+# distro
+alias distro='cat /etc/*-release'
+
+# rerun previous command with sudo
+alias ffs='sudo !!'
+
+# less & grep
+# pipe a command’s output to less (eg: cat production.log L)
+alias -g L='| less'
+
+# docker
+alias dpsa="docker ps -a"
+alias dcup="docker-compose up"
+alias dcupd="docker-compose up -d"
+
+# disk
+alias df='df -H' # human-readable sizes
+alias free='free -m' # show sizes in MB
+
+# chmod
+alias chx='chmod + x'
+
+# sudo
+alias su 'sudo su'
+
+# vscodium
+alias vsc='codium'
+alias 'vsc git'='~/git'
