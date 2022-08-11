@@ -78,4 +78,3 @@ alias su 'sudo su'
 
 # vscodium
 alias vsc='codium'
-alias 'vsc git'='~/git'
