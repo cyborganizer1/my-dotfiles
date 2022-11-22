@@ -2,7 +2,7 @@
 # https://www.reddit.com/r/linux/comments/c85me2/useful_aliases_that_i_have_created/
 
 # git dotfile
-alias config='/usr/bin/git --git-dir=/mnt/win/d/git/my-dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=/home/pala/dotfiles/ --work-tree=$HOME'
 
 # terraform aliases
 alias tf='terraform'
