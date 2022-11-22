@@ -4,19 +4,35 @@
 
 # To configure:
 
-git init --bare $HOME/dotfiles # init bare repo in dotfiles path
+mkdir dotfiles 
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' # add to zsh_aliases
+git init --bare $HOME/dotfiles 
 
-config config --local status.showUntrackedFiles no
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
 
-git remote add origin git@github.com:cyborganizer1/my-dotfiles.git # set remote to existing repo from github
+config config --local status.showUntrackedFiles no 
 
-config push git@github.com:cyborganizer1/my-dotfiles.git # push to existing repo from github
+ 
 
-config push --set-upstream origin main # set upstream
+git remote add dotfiles git@github.com:cyborganizer1/my-dotfiles.git 
 
-config push
+config pull --set-upstream git@github.com:cyborganizer1/my-dotfiles.git main 
 
-# Once this is done, you will only need to commit changes
+/* 
+
+config pull --set-upstream git@github.com:cyborganizer1/my-dotfiles.git main --allow-unrelated-histories 
+
+config config pull.rebase false 
+
+*/ 
+
+config pull --set-upstream git@github.com:cyborganizer1/my-dotfiles.git main 
+
+ 
+
+config add .zshrc 
+
+config commit -m "Add zshrc" 
+
+config push 
 
