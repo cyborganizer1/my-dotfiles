@@ -1,5 +1,6 @@
 # Git Bare Repository - A Better Way To Manage Dotfiles
 # Distro-tube https://www.youtube.com/watch?v=tBoLDpTWVOM
+# Atlassian Tutorial https://www.atlassian.com/git/tutorials/dotfiles
 
 # To configure:
 
